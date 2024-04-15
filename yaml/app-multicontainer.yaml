@@ -1,1 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-container-app
+spec:
+  containers:
+  - name: web-server
+    image: nginx:latest
+    ports:
+      - containerPort: 80
+
+  - name: app-server
+    image: myapp:latest
+    env:
+      - name: APP_COLOR
+        value: blue
+    resources:
+      requests:
+        memory: "128Mi"
+        cpu: "500m"
+      limits:
+        memory: "256Mi"
+        cpu: "1"
 
