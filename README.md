@@ -1,7 +1,8 @@
+# Kubernetes-manifests
 
 | NAME | PROMPT | DESCRIPTION | EXAMPLE |
 |:----:|:------:|:-----------:|:-------:|
-|app.yaml| kubectl apply -f app.yaml | Simple POD manifest | [app.yaml](./app.yaml)|
+|app.yaml| kubectl apply -f app.yaml | Simple POD manifest | [app.yaml](./yaml/app.yaml)|
 |app-livenessProbe.yaml| kubectl apply -f app-livenessProbe.yaml | Manifest with liveness probe   | [app-livenessProbe.yaml](./yaml/app-livenessProbe.yaml) |
 |app-readinessProbe.yaml| kubectl apply -f app-readinessProbe.yaml | Manifest with readiness probe  |[app-readinessProbe.yaml](./yaml/app-readinessProbe.yaml) |
 |app-volumeMounts.yaml| kubectl apply -f app-volumeMounts.yaml | Manifest with volume mount |[app-volumeMounts.yaml](./yaml/app-volumeMounts.yaml) |
